@@ -102,7 +102,7 @@ const VehiclesList: React.FC = () => {
                 <IonLabel position="stacked">Modèle</IonLabel>
                 <input name="model" onChange={handleChange} type="text" placeholder="Modèle" />
               </IonItem>
-              <IonLabel position="stacked">Type de véhicule</IonLabel>
+              <IonLabel className="selectLabel" position="stacked">Type de véhicule</IonLabel>
               <IonSelect className="vehicleSelect" name="genre" onIonChange={(e) => handleChangeType(e.target.value)} interface="popover" placeholder="Type de véhicule">
                     <IonSelectOption value="Voiture">Voiture</IonSelectOption>
                     <IonSelectOption value="Camionnette">Camionnette</IonSelectOption>
@@ -113,7 +113,7 @@ const VehiclesList: React.FC = () => {
                 <IonLabel position="stacked">Immatriculation</IonLabel>
                 <input name="immat" onChange={handleChange} type="text" placeholder="Immatriculation" />
               </IonItem>
-              <IonLabel position="stacked">Etat du véhicule</IonLabel>
+              <IonLabel className="selectLabel" position="stacked">Etat du véhicule</IonLabel>
               <IonSelect className="vehicleSelect" name="state" onIonChange={(e) => handleChangeState(e.target.value)} interface="popover" placeholder="Etat du véhicule">
                     <IonSelectOption value="A">A</IonSelectOption>
                     <IonSelectOption value="B">B</IonSelectOption>
@@ -124,7 +124,7 @@ const VehiclesList: React.FC = () => {
                 <IonLabel position="stacked">Prix de location</IonLabel>
                 <input name="price" onChange={handleChange} type="number" placeholder="Prix de location" />
               </IonItem>
-              <IonLabel position="stacked">Disponibilité</IonLabel>
+              <IonLabel className="selectLabel" position="stacked">Disponibilité</IonLabel>
               <IonSelect className="vehicleSelect" name="disponibility" onIonChange={(e) => handleChangeDisponibility(e.target.value)} interface="popover" placeholder="Disponibilité">
                     <IonSelectOption value="DISPONIBLE">DISPONIBLE</IonSelectOption>
                     <IonSelectOption value="INDISPONIBLE">INDISPONIBLE</IonSelectOption>

@@ -150,7 +150,7 @@ function handleChangeDisponibility(e: any) {
                 <IonLabel position="stacked">Modèle</IonLabel>
                 <input name="model" onChange={handleChange} type="text" placeholder={vehicle?.model} />
               </IonItem>
-              <IonLabel position="stacked">Type de véhicule</IonLabel>
+              <IonLabel className="selectLabel" position="stacked">Type de véhicule</IonLabel>
               <IonSelect className="vehicleSelect" name="genre" onIonChange={(e) => handleChangeType(e.target.value)} interface="popover" placeholder={vehicle?.genre}>
                     <IonSelectOption value="Voiture">Voiture</IonSelectOption>
                     <IonSelectOption value="Camionnette">Camionnette</IonSelectOption>
@@ -161,7 +161,7 @@ function handleChangeDisponibility(e: any) {
                 <IonLabel position="stacked">Immatriculation</IonLabel>
                 <input name="immat" onChange={handleChange} type="text" placeholder={vehicle?.immat} />
               </IonItem>
-              <IonLabel position="stacked">Etat du véhicule</IonLabel>
+              <IonLabel className="selectLabel" position="stacked">Etat du véhicule</IonLabel>
               <IonSelect className="vehicleSelect" name="state" onIonChange={(e) => handleChangeState(e.target.value)} interface="popover" placeholder={vehicle?.state}>
                     <IonSelectOption value="A">A</IonSelectOption>
                     <IonSelectOption value="B">B</IonSelectOption>
@@ -172,7 +172,7 @@ function handleChangeDisponibility(e: any) {
                 <IonLabel position="stacked">Prix de location</IonLabel>
                 <input name="price" onChange={handleChange} type="number" placeholder="Nouveau prix" />
               </IonItem>
-              <IonLabel position="stacked">Disponibilité</IonLabel>
+              <IonLabel className="selectLabel" position="stacked">Disponibilité</IonLabel>
               <IonSelect className="vehicleSelect" name="disponibility" onIonChange={(e) => handleChangeDisponibility(e.target.value)} interface="popover" placeholder={vehicle?.disponibility}>
                     <IonSelectOption value="DISPONIBLE">DISPONIBLE</IonSelectOption>
                     <IonSelectOption value="INDISPONIBLE">INDISPONIBLE</IonSelectOption>

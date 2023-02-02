@@ -27,8 +27,8 @@ const UserDetails: React.FC = () => {
     setShowModal(false)
     if (user){
       userService.updateUser(user.id, user)
-      console.log(user)
-      //window.location.reload();
+      //console.log(user)
+      window.location.reload();
     }
   }
 
@@ -39,7 +39,6 @@ const UserDetails: React.FC = () => {
   function handleChange (e: any){
     if (user){
       setUser({...user, [e.target.name]: e.target.value});
-      console.log(e)
     }
   }
 

@@ -15,3 +15,12 @@
 .buttonsContainer {
     display: flex;
 }
+
+input {
+    border: none;
+    background-color: transparent;
+}
+
+.selectLabel{
+    margin-left: 1.5em;
+}
