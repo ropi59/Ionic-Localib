@@ -1,0 +1,17 @@
+.card {
+    padding-left: 2em;
+    text-transform: capitalize;
+
+}
+
+.disponibility {
+    color: green;
+}
+
+.immat {
+    text-transform: uppercase;
+}
+
+.buttonsContainer {
+    display: flex;
+}
